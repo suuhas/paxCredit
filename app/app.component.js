@@ -19,7 +19,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "\n  <h1>{{title}}</h1>\n  <nav>\n    <a [routerLink]=\"['/billing']\" routerLinkActive=\"active\">Billing</a>\n    <a [routerLink]=\"['/orderConfirmation']\" routerLinkActive=\"active\">orderConfirmation</a>\n  </nav>\n  <router-outlet></router-outlet>\n  <trasfer-details></trasfer-details>\n",
+            template: "\n  <div class=\"paxcreditContainer\">\n  <nav>\n    <a [routerLink]=\"['/billing']\" routerLinkActive=\"active\">Billing</a>\n    <a [routerLink]=\"['/orderConfirmation']\" routerLinkActive=\"active\">orderConfirmation</a>\n  </nav>\n  <router-outlet></router-outlet>\n  <trasfer-details></trasfer-details>\n  </div>\n",
+            styleUrls: ['app/app.component.css'],
             directives: [router_1.ROUTER_DIRECTIVES, transferDetails_component_1.TransferDetailsComponent],
             precompile: [billingDetails_component_1.BillingDetailsComponent, orderConfirmation_component_1.OrderConfirmationComponent]
         }), 
