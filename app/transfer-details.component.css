@@ -18,8 +18,8 @@
     margin-top: 16px;
 }
 .countryDiv{
-        height: 50px;
-webkit-box-shadow: 0 0 5px #40454B;
+    height: 50px;
+    webkit-box-shadow: 0 0 5px #40454B;
     -moz-box-shadow: 0 0 5px #40454B;
     box-shadow: 0 0 5px #40454B;
 }
@@ -48,7 +48,7 @@ a {
   position: absolute;
   text-indent: 10px;
   line-height: 32px;
-  background-color: #eee;
+  background-color: rgba(255,255,255,1);
   border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
@@ -108,7 +108,7 @@ a {
   border-radius: 3px;
   text-indent: 10px;
   line-height: 32px;
-  background-color: #eee;
+background-color: rgba(255,255,255,1);
   border: 1px solid #ccc;
     width: 100%;
     
@@ -146,3 +146,88 @@ a {
   top: 42px;
 }
 
+.currency{
+     float: left;
+    margin-left: 10px;
+    margin-top: 16px;
+}
+
+input[type=text], select {
+    float: right;
+  display: inline-block;
+  text-align: left;
+     width: 150px;
+    margin-right: 10px;
+    margin-top: 8px;
+        height: 30px;
+        border: none;
+
+}
+
+.currenyDiv{
+    height: 50px;
+    webkit-box-shadow: 0 0 5px #40454B;
+    -moz-box-shadow: 0 0 5px #40454B;
+    box-shadow: 0 0 5px #40454B;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+.inrDiv{
+    height: 50px;
+    webkit-box-shadow: 0 0 5px #40454B;
+    -moz-box-shadow: 0 0 5px #40454B;
+    box-shadow: 0 0 5px #40454B;
+}
+
+.inr{
+    float: left;
+    margin-left: 10px;
+    margin-top: 16px;
+}
+.inrAmount{
+       float: right;
+    margin-right: 95px;
+    margin-top: 16px;
+}
+
+.rateDiv{
+    height: 50px;
+    webkit-box-shadow: 0 0 5px #40454B;
+    -moz-box-shadow: 0 0 5px #40454B;
+    box-shadow: 0 0 5px #40454B;
+}
+
+.rateLabel{
+     float: left;
+    margin-left: 10px;
+    margin-top: 16px;
+}
+
+.rate{
+     float: right;
+    margin-right: 95px;
+    margin-top: 16px;
+}
+
+.amountSavedDiv{
+    height: 50px;
+    webkit-box-shadow: 0 0 5px #40454B;
+    -moz-box-shadow: 0 0 5px #40454B;
+    box-shadow: 0 0 5px #40454B;
+}
+
+.amountSavedLabel{
+     float: left;
+    margin-left: 10px;
+    margin-top: 16px;
+}
+
+.amountSaved{
+     float: right;
+    margin-right: 95px;
+    margin-top: 16px;
+}
