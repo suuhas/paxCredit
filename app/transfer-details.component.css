@@ -1,0 +1,14 @@
+.transfer-details{
+    height: 600px;
+    width: 300px;
+    position: relative;
+    background:#27B399;
+    float: left;
+    
+}
+h4{
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #40454B;
+}
