@@ -5,28 +5,49 @@
     height: 675px;
     width: 260px;
     position: relative;
-    background:#27B399;
+    background:#40454B;
     float: left;
     webkit-box-shadow: 0 0 5px #40454B;
     -moz-box-shadow: 0 0 5px #40454B;
     box-shadow: 0 0 5px #40454B;
     
 }
+
+.countryDiv{
+    height: 50px;
+    webkit-box-shadow: 0 0 5px #27B399;
+    -moz-box-shadow: 0 0 5px #27B399;
+    box-shadow: 0 0 5px #27B399;
+
+}
 .country{
     float: left;
     margin-left: 10px;
     margin-top: 16px;
+    color:#27B399;
+    font-size: 12px;
 }
-.countryDiv{
+
+.currencyDiv{
     height: 50px;
-    webkit-box-shadow: 0 0 5px #40454B;
-    -moz-box-shadow: 0 0 5px #40454B;
-    box-shadow: 0 0 5px #40454B;
+    webkit-box-shadow: 0 0 5px #27B399;
+    -moz-box-shadow: 0 0 5px #27B399;
+    box-shadow: 0 0 5px #27B399;
+
 }
+.currency{
+    float: left;
+    margin-left: 10px;
+    margin-top: 16px;
+    color:#27B399;
+    font-size: 12px;
+}
+
 
 h4{
       position: relative;
     text-align: center;
+    color:#27B399;
 }
 
 a {
@@ -38,21 +59,33 @@ a {
   position: relative;
   display: inline-block;
   text-align: left;
-     width: 150px;
+     width: 115px;
+     z-index: 10;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+.dropdown2 {
+    float: right;
+  position: relative;
+  display: inline-block;
+  text-align: left;
+     width: 115px;
+     z-index: 5;
     margin-right: 10px;
     margin-top: 8px;
 }
 
 .dropdown-text {
-  cursor: pointer;
-  position: absolute;
-  text-indent: 10px;
-  line-height: 32px;
-  background-color: rgba(255,255,255,1);
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
-  width: 100%;
+    cursor: pointer;
+    position: absolute;
+    font-size: 12px;
+    text-indent: 10px;
+    line-height: 32px;
+    background-color: rgba(255,255,255,1);
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 1px 0 rgba(255,255,255, .9) inset, 0 1px 3px rgba(0,0,0, .1);
+    width: 100%;
 }
 
 .dropdown-text:after {
@@ -69,8 +102,7 @@ a {
 
 .dropdown-text,
 .dropdown-content a {
-  color: #333;
-  text-shadow: 0 1px #fff;
+  color:#40454B;
 }
 
 .dropdown-toggle {
@@ -108,9 +140,10 @@ a {
   border-radius: 3px;
   text-indent: 10px;
   line-height: 32px;
-background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,1);
   border: 1px solid #ccc;
-    width: 100%;
+  width: 100%;
+  font-size: 12px;
     
 }
 
@@ -146,30 +179,50 @@ background-color: rgba(255,255,255,1);
   top: 42px;
 }
 
-.currency{
+.forexAmountDiv{
+    height: 50px;
+    webkit-box-shadow: 0 0 5px #27B399;
+    -moz-box-shadow: 0 0 5px #27B399;
+    box-shadow: 0 0 5px #27B399;
+}
+
+.forexAmount{
      float: left;
     margin-left: 10px;
     margin-top: 16px;
+    color:#27B399;
+    font-size: 12px;
 }
 
 input[type=text], select {
     float: right;
-  display: inline-block;
-  text-align: left;
-     width: 150px;
+    display: inline-block;
+    text-align: left;
+    width: 115px;
     margin-right: 10px;
     margin-top: 8px;
-        height: 30px;
-        border: none;
+    height: 34px;
+    border: none;
+    color:#40454B;
 
 }
 
-.currenyDiv{
-    height: 50px;
-    webkit-box-shadow: 0 0 5px #40454B;
-    -moz-box-shadow: 0 0 5px #40454B;
-    box-shadow: 0 0 5px #40454B;
+::-webkit-input-placeholder {
+   color: #40454B;
 }
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #40454B;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #40454B;
+}
+
+:-ms-input-placeholder {  
+   color: #40454B;
+}
+
 
 *:focus {
     outline: none;
@@ -178,56 +231,68 @@ input[type=text], select {
 
 .inrDiv{
     height: 50px;
-    webkit-box-shadow: 0 0 5px #40454B;
-    -moz-box-shadow: 0 0 5px #40454B;
-    box-shadow: 0 0 5px #40454B;
+    webkit-box-shadow: 0 0 5px #27B399;
+    -moz-box-shadow: 0 0 5px #27B399;
+    box-shadow: 0 0 5px #27B399;
 }
 
 .inr{
     float: left;
     margin-left: 10px;
     margin-top: 16px;
+    color:#27B399;
+    font-size: 12px;
 }
 .inrAmount{
-       float: right;
-    margin-right: 95px;
+    float: right;
+    margin-right: 52px;
     margin-top: 16px;
+    color:white;
+    font-size: 12px;
 }
 
 .rateDiv{
     height: 50px;
-    webkit-box-shadow: 0 0 5px #40454B;
-    -moz-box-shadow: 0 0 5px #40454B;
-    box-shadow: 0 0 5px #40454B;
+    webkit-box-shadow: 0 0 5px #27B399;
+    -moz-box-shadow: 0 0 5px #27B399;
+    box-shadow: 0 0 5px #27B399;
 }
 
 .rateLabel{
      float: left;
     margin-left: 10px;
     margin-top: 16px;
+    color:#27B399;
+    font-size: 12px;
 }
 
 .rate{
      float: right;
-    margin-right: 95px;
+    margin-right: 52px;
     margin-top: 16px;
+    color:white;
+    font-size: 12px;
 }
 
 .amountSavedDiv{
     height: 50px;
-    webkit-box-shadow: 0 0 5px #40454B;
-    -moz-box-shadow: 0 0 5px #40454B;
-    box-shadow: 0 0 5px #40454B;
+    webkit-box-shadow: 0 0 5px #27B399;
+    -moz-box-shadow: 0 0 5px #27B399;
+    box-shadow: 0 0 5px #27B399;
 }
 
 .amountSavedLabel{
      float: left;
     margin-left: 10px;
     margin-top: 16px;
+    color:#27B399;
+    font-size: 12px;
 }
 
 .amountSaved{
      float: right;
-    margin-right: 95px;
+    margin-right: 52px;
     margin-top: 16px;
+    color:white;
+    font-size: 12px;
 }
