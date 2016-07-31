@@ -1,3 +1,8 @@
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .order-confirmation{
     height: 675px;
     width: 700px;
@@ -45,65 +50,91 @@ input[type="text"]:focus {
 	outline:none;
 }
 
-.firstRowDiv{
+.orderFirstRowDiv{
     margin-top: 20px;
     margin-left: 40px;
 }
- .fullNameLabel{
+ .orderFullNameLabel{
      font-size: 12px;
      margin-left: 7px;
 }
 
-.fullName{
+.orderFullName{
 
 }
 
-.fullNameDiv{
+.orderFullNameDiv{
     float: left;
 }
 
 
-.emailDiv{
+.orderEmailDiv{
     float: left;	
     margin-left: 25px;
 }
 
-.emailLabel{
+.orderEmailLabel{
     margin-left: 7px;
     font-size: 12px;
 }
-.email{
+.orderEmail{
 
 }
 
-.secondRowDiv{
+.orderSecondRowDiv{
     display: inline-block;
     margin-left: 40px;
     margin-top: 10px;
 }
 
-.phoneNumberDiv{
+.orderPhoneNumberDiv{
 
 }
 
-.phoneNumberLabel{
+.orderPhoneNumberLabel{
     margin-left: 7px;
     font-size: 12px;
 }
-.phoneNumber{
+.orderPhoneNumber{
 
 }
-.thirdRow, .fourthRow{
+.orderThirdRow{
     margin-left: 40px;
     margin-top: 10px;  
 }
-.addressDiv1{
+
+.orderFourthRow{
+    margin-left: 40px;
+    margin-top: 10px;  
+}
+.orderAddressDiv1{
 
 }
-.addressDiv1Label, .addressDiv2Label{
+.orderAddressDiv1Label, .orderAddressDiv2Label{
     margin-left: 7px;
     font-size: 12px;
 }
-.addressDiv1{
 
+input[type="text"]:focus {
+	background:#fff;
+	border:2px solid #609EC3;
+	outline:none;
+}
+
+input[type="text1"]{
+	padding: 6px;
+	width: 600px;
+	font-size: 1.1em;
+	margin: 7px 0px;
+	border: 2px solid#EAEEF1;
+	color: #666666;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:600;
+	margin-left: 5px;
+	outline:none;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
 }
