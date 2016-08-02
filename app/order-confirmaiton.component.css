@@ -27,6 +27,7 @@
     font-size: 14px;
     margin-left: 56px;
     font-weight: 700;
+    color: #40454B;
 }
 
 .billingHeading{
@@ -40,16 +41,19 @@
 }
 .documnentsMainHeading{
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 20px;
     font-weight: bold;
+    color: #40454B;
 }
 
 
 li , p, .doorPickup, .storePickup {
    font-family: 'Open Sans', sans-serif;
-    font-size: 14px; 
+    font-size: 12px; 
+    color: #40454B;
 }
+
 .order-confirmation{
     height: 675px;
     width: 700px;
@@ -72,12 +76,12 @@ li , p, .doorPickup, .storePickup {
 input[type="text"]{
 	padding: 6px;
 	width: 285px;
-	font-size: 1.1em;
 	margin: 7px 0px;
 	border: 2px solid#EAEEF1;
-	color: #666666;
-	font-family: 'Open Sans', sans-serif;
-	font-weight:600;
+	color: #40454B;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
 	margin-left: 5px;
 	outline:none;
 	-webkit-transition: all 0.3s ease-out;
@@ -100,6 +104,7 @@ input[type="text"]:focus {
  .orderFullNameLabel{
      font-size: 12px;
      margin-left: 7px;
+     color: #40454B;
 }
 
 .orderFullName{
@@ -119,6 +124,7 @@ input[type="text"]:focus {
 .orderEmailLabel{
     margin-left: 7px;
     font-size: 12px;
+    color: #40454B;
 }
 .orderEmail{
 
@@ -138,6 +144,7 @@ input[type="text"]:focus {
 .orderPhoneNumberLabel{
     margin-left: 7px;
     font-size: 12px;
+    color: #40454B;
 }
 .orderPhoneNumber{
 
@@ -151,6 +158,7 @@ input[type="text"]:focus {
 .orderPinLabel{
     margin-left: 7px;
     font-size: 12px;
+    color: #40454B;
 }
 .orderPin{
 
@@ -171,6 +179,7 @@ input[type="text"]:focus {
 .orderAddressDiv1Label, .orderAddressDiv2Label{
     margin-left: 7px;
     font-size: 12px;
+    color: #40454B;
 }
 
 input[type="text"]:focus {
@@ -182,12 +191,12 @@ input[type="text"]:focus {
 input[type="text1"]{
 	padding: 6px;
 	width: 600px;
-	font-size: 1.1em;
 	margin: 7px 0px;
 	border: 2px solid#EAEEF1;
-	color: #666666;
-	font-family: 'Open Sans', sans-serif;
-	font-weight:600;
+	color: #40454B;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
 	margin-left: 5px;
 	outline:none;
 	-webkit-transition: all 0.3s ease-out;

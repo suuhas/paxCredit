@@ -7,5 +7,20 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 })
 
 export class OrderConfirmationComponent {
+  selectedDoorPickup: boolean;
+  selectedStorePickup:boolean;
+  
+  ngOnInit() {
+    this.selectedDoorPickup = true;
+  }
 
+  onSelectDoor() {
+    this.selectedDoorPickup = true;
+    this.selectedStorePickup = false;
+  }
+
+  onSelectDrop(){
+    this.selectedDoorPickup = false;
+    this.selectedStorePickup = true;
+  }
 }

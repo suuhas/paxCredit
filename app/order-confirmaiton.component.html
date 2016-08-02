@@ -1,4 +1,4 @@
-<div class="order-confirmation">  
+<div class="order-confirmation" ng-app="">  
     <br>
       <div class="horizantalDivs">
          <div class="billingHeading">
@@ -17,10 +17,9 @@
         <p class="documnentsMainHeading">Documents Required</p>
         <ul style="list-style-type:square" >
             <li>Valid Passport</li>
-            <li>Valid Student Visa</li>
+            <li>Valid Student Visa (I-20 (in case of travel to the USA))</li>
             <li>One-Way Air Ticket</li>
             <li>Admission Letter From University</li>
-            <li>I-20 (in case of travel to the USA)</li>
             <li>Pan Card</li>
         </ul>
     </div>
@@ -30,14 +29,13 @@
         <div class="orderDeliveryOptions">
             <p>Please choose your order type : </p>
             <label class="doorPickup">
-                <input type="radio" name="optradio">Door Pickup
+                <input type="radio" name="content"  value="doorPickupRadio" (click)="onSelectDoor()" checked>Door Pickup
             </label>
             <label class="storePickup">
-                <input type="radio" name="optradio">Store Pickup
+                <input type="radio" name="content" value="storePickupRadio" (click)="onSelectDrop()">Store Pickup
             </label>
         </div>    
-    
-
+    <div *ngIf="selectedDoorPickup">
      <div class="orderFirstRowDiv">
         <div class="orderFullNameDiv" >
             <div class="orderFullNameLabel"> <label>Full Name</label></div>
@@ -55,22 +53,27 @@
             <div class="orderPhoneNumber" > <input type="text" class="textbox"></div>
         </div>
         <div class="orderPinDiv">
-            <div class="orderPinLabel"> <label>PINCODE</label></div>
+            <div class="orderPinLabel"> <label>Pin Code</label></div>
             <div class="orderPin" > <input type="text" class="textbox"></div>
         </div>
     </div>
     
        <div class="orderThirdRow">
         <div class="orderAddressDiv1" >
-            <div class="orderAddressDiv1Label"> <label>Address line 1 : </label></div>
+            <div class="orderAddressDiv1Label"> <label>Address Line 1 : </label></div>
             <div class="orderAddressDiv1" > <input type="text1" class="textbox"></div>
         </div>
     </div>
     <div class="orderFourthRow">
         <div class="orderAddressDiv2" >
-            <div class="orderAddressDiv2Label"> <label>Address line 2 : </label></div>
+            <div class="orderAddressDiv2Label"> <label>Address Line 2 : </label></div>
             <div class="addressDiv2" > <input type="text1" class="textbox"></div>
         </div>
     </div>
+    </div>
+
+    <div *ngIf="selectedStorePickup">
+        <p>this is the bank addres please drop a msg here</p>
+        </div>
 
 </div>

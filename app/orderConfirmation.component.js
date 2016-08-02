@@ -12,6 +12,17 @@ var core_1 = require('@angular/core');
 var OrderConfirmationComponent = (function () {
     function OrderConfirmationComponent() {
     }
+    OrderConfirmationComponent.prototype.ngOnInit = function () {
+        this.selectedDoorPickup = true;
+    };
+    OrderConfirmationComponent.prototype.onSelectDoor = function () {
+        this.selectedDoorPickup = true;
+        this.selectedStorePickup = false;
+    };
+    OrderConfirmationComponent.prototype.onSelectDrop = function () {
+        this.selectedDoorPickup = false;
+        this.selectedStorePickup = true;
+    };
     OrderConfirmationComponent = __decorate([
         core_1.Component({
             selector: 'order-confirmaiton',

@@ -24,6 +24,7 @@
     font-size: 14px;
     margin-left: 56px;
     font-weight: 700;
+    color: #40454B;
 }
 
 .orderConfirmation{
@@ -57,12 +58,12 @@ h4{
 input[type="text"]{
 	padding: 6px;
 	width: 285px;
-	font-size: 1.1em;
 	margin: 7px 0px;
 	border: 2px solid#EAEEF1;
-	color: #666666;
-	font-family: 'Open Sans', sans-serif;
-	font-weight:600;
+	color: #40454B;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
 	margin-left: 5px;
 	outline:none;
 	-webkit-transition: all 0.3s ease-out;
@@ -81,12 +82,12 @@ input[type="text"]:focus {
 input[type="text1"]{
 	padding: 6px;
 	width: 600px;
-	font-size: 1.1em;
 	margin: 7px 0px;
 	border: 2px solid#EAEEF1;
-	color: #666666;
-	font-family: 'Open Sans', sans-serif;
-	font-weight:600;
+	color: #40454B;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
 	margin-left: 5px;
 	outline:none;
 	-webkit-transition: all 0.3s ease-out;
@@ -109,6 +110,7 @@ input[type="text1"]:focus {
  .fullNameLabel{
      font-size: 12px;
      margin-left: 7px;
+     color: #40454B;
 }
 
 .fullName{
@@ -128,6 +130,7 @@ input[type="text1"]:focus {
 .emailLabel{
     margin-left: 7px;
     font-size: 12px;
+    color: #40454B;
 }
 .email{
 
@@ -146,6 +149,7 @@ input[type="text1"]:focus {
 .phoneNumberLabel{
     margin-left: 7px;
     font-size: 12px;
+    color: #40454B;
 }
 .phoneNumber{
 
@@ -160,6 +164,7 @@ input[type="text1"]:focus {
 .addressDiv1Label, .addressDiv2Label{
     margin-left: 7px;
     font-size: 12px;
+    color: #40454B;
 }
 .addressDiv1{
 
@@ -178,6 +183,7 @@ input[type="text1"]:focus {
 .accountNameLabel, .accountNumberLabel, .swiftCodeLabel{
     font-size: 12px;
      margin-left: 7px;
+     color: #40454B;
 }
 .accountName, .accountNumber, .swiftCode{
 
@@ -190,7 +196,8 @@ input[type="text1"]:focus {
 
 .bankNameLabel, .dupAccountNumberLabel, .benEmailLabel{
     margin-left: 7px;
-    font-size: 12px; 
+    font-size: 12px;
+    color: #40454B;
 }
 .bankName, .dupAccountNumber, .benEmail{
 
