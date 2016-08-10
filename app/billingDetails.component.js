@@ -9,16 +9,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var BillingDetailsComponent = (function () {
-    function BillingDetailsComponent() {
+    function BillingDetailsComponent(router) {
+        this.router = router;
+        this.IsClickEnabled = false; //change the value if all the fields are filled in the billing
+        //OR without this variable - try putting fields under form and make CONTINUE as a button
     }
+    BillingDetailsComponent.prototype.onContinue = function () {
+        var link = ['/orderConfirmation'];
+        this.IsClickEnabled = true; //making it true just for testing
+        if (this.IsClickEnabled) {
+            this.router.navigate(link);
+        }
+    };
     BillingDetailsComponent = __decorate([
         core_1.Component({
             selector: 'billing-details',
             templateUrl: 'app/billing-details.component.html',
             styleUrls: ['app/billing-details.component.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], BillingDetailsComponent);
     return BillingDetailsComponent;
 }());

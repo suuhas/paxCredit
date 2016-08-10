@@ -9,8 +9,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router');
 var OrderConfirmationComponent = (function () {
-    function OrderConfirmationComponent() {
+    function OrderConfirmationComponent(router) {
+        this.router = router;
+        this.IsBackClickEnabled = true; //this is always true because going back has no validations
+        //OR if we want to add validations then this changes
+        this.IsSubmitClickEnabled = false; //change the value if all the fields are filled in the billing
+        //OR try putting those under form and make it as a button
     }
     OrderConfirmationComponent.prototype.ngOnInit = function () {
         this.selectedDoorPickup = true;
@@ -23,13 +29,25 @@ var OrderConfirmationComponent = (function () {
         this.selectedDoorPickup = false;
         this.selectedStorePickup = true;
     };
+    OrderConfirmationComponent.prototype.onBack = function () {
+        var link = ['/billing'];
+        if (this.IsBackClickEnabled) {
+            this.router.navigate(link);
+        }
+    };
+    OrderConfirmationComponent.prototype.onSubmit = function () {
+        var link = ['/todo'];
+        if (this.IsSubmitClickEnabled) {
+            this.router.navigate(link);
+        }
+    };
     OrderConfirmationComponent = __decorate([
         core_1.Component({
             selector: 'order-confirmaiton',
             templateUrl: 'app/order-confirmaiton.component.html',
             styleUrls: ['app/order-confirmaiton.component.css']
         }), 
-        __metadata('design:paramtypes', [])
+        __metadata('design:paramtypes', [router_1.Router])
     ], OrderConfirmationComponent);
     return OrderConfirmationComponent;
 }());

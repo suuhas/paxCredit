@@ -211,3 +211,49 @@ input[type="text1"]{
     border-color: #d6d8e4;
     margin-left: 90px;
 }
+
+.buttonDiv{
+     margin-left: 163px;
+    margin-top: 25px;
+    float: left;
+}
+
+.buttonDiv2{
+     margin-left: 163px;
+    margin-top: 25px;
+    float: left;
+}
+a.btn.btn-blue {
+	background-color: #40454B;
+	border-color: rgba(0,0,0,0.3);
+	text-shadow: 0 1px 0 rgba(0,0,0,0.5);
+	color: #FFF;
+}
+
+a.btn.btn-blue:hover {
+    background-color: #4F87A2;
+    border-color: rgba(0,0,0,0.5);
+    cursor: hand;
+}
+
+a.btn.btn-blue:active {
+    background-color: #3C677B;
+    border-color: rgba(0,0,0,0.9);
+}
+
+
+a.btn {
+
+	display: inline-block;
+	color: #666;
+	background-color: #eee;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 12px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.3);
+	border-bottom-width: 3px;
+}
